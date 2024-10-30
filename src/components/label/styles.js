@@ -6,7 +6,7 @@ export default StyleSheet.create({
     top: 0,
     left: '-100%',
     width: '200%',
-    paddingLeft: '50%',
+    paddingLeft: '100%',
   },
 
   text: {
