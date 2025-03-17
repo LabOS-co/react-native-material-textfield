@@ -642,6 +642,7 @@ export default class TextField extends PureComponent {
     return (
       <TextInput
         selectionColor={tintColor}
+	testID={this.props.testID}
 
         {...props}
 
