@@ -454,22 +454,6 @@ export default class TextField extends PureComponent {
       + contentInset.input;
   }
 
-  inputProps() {
-    let store = {};
-
-    for (let key in TextInput.propTypes) {
-      if ('defaultValue' === key) {
-        continue;
-      }
-
-      if (key in this.props) {
-        store[key] = this.props[key];
-      }
-    }
-
-    return store;
-  }
-
   inputStyle() {
     let { fontSize, baseColor, textColor, disabled, multiline } = this.props;
 
@@ -618,9 +602,9 @@ export default class TextField extends PureComponent {
       tintColor,
       style: inputStyleOverrides,
       renderInput,
+      ...props
     } = this.props;
 
-    let props = this.inputProps();
     let inputStyle = this.inputStyle();
 
     if (renderInput && typeof renderInput === 'function') {
@@ -642,7 +626,7 @@ export default class TextField extends PureComponent {
     return (
       <TextInput
         selectionColor={tintColor}
-	testID={this.props.testID}
+        testID={this.props.testID}
 
         {...props}
 
