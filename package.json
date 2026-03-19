@@ -43,13 +43,13 @@
     "@babel/runtime": "^7.5.5",
     "babel-eslint": "^10.0.0",
     "babel-jest": "^24.9.0",
-    "eslint": "^6.5.0",
+    "eslint": "^10.0.3",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-native": "^3.7.0",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.56.0",
     "react": "16.10.2",
-    "react-native": "0.61.2",
+    "react-native": "0.84.1",
     "react-test-renderer": "16.10.2"
   },
   "scripts": {
